@@ -1,0 +1,86 @@
+
+html {
+  font-size: 100%;
+}
+/*
+フッターを画面下に配置するために、
+「position: relative;」を設定
+「min-height」で最小の高さを画面の高さにあわせる
+*/
+body {
+  color: #333;
+  font-size: 0.875rem;
+  min-height: 100vh;
+  position: relative;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+a:hover {
+  opacity: 0.7;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+/*
+コンテンツ幅を設定するための共通クラス
+*/
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.content {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+.site-title a {
+  width: 180px;
+  line-height: 1px;
+  display: block;
+}
+.page-title {
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/*ヘッダー部分のCSS */
+
+#head{
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#navi{
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  color: #fff;
+  padding: 36px 50px;
+  transition: all 0.5s;
+  z-index: 20;
+  opacity: 0;
+  
+}
+#navi a {
+  color: #fff;
+}
+#navi li {
+  margin-bottom: 14px;
+}
